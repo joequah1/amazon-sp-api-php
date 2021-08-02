@@ -1,6 +1,6 @@
 <?php
 /**
- * ChargeComponentList.
+ * Date.
  *
  * PHP version 5
  *
@@ -18,19 +18,15 @@
 namespace ClouSale\AmazonSellingPartnerAPI\Models\Finances;
 
 use ArrayAccess;
-use ClouSale\AmazonSellingPartnerAPI\Models\IterableType;
 use ClouSale\AmazonSellingPartnerAPI\Models\ModelInterface;
 use ClouSale\AmazonSellingPartnerAPI\ObjectSerializer;
 
 /**
- * ChargeComponentList Class Doc Comment.
- *
-
- * @description A list of charge information on the seller&#x27;s account.
+ * DateTime Class Doc Comment.
  *
  * @author   Stefan Neuhaus / ClouSale
  */
-class ChargeComponentList implements ModelInterface, ArrayAccess, IterableType
+class DateTime implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -39,7 +35,7 @@ class ChargeComponentList implements ModelInterface, ArrayAccess, IterableType
      *
      * @var string
      */
-    protected static $swaggerModelName = 'ChargeComponentList';
+    protected static $swaggerModelName = 'DateTime';
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
@@ -47,7 +43,7 @@ class ChargeComponentList implements ModelInterface, ArrayAccess, IterableType
      * @var string[]
      */
     protected static $swaggerTypes = [
-            ];
+    ];
 
     /**
      * Array of property to format mappings. Used for (de)serialization.
@@ -55,7 +51,7 @@ class ChargeComponentList implements ModelInterface, ArrayAccess, IterableType
      * @var string[]
      */
     protected static $swaggerFormats = [
-            ];
+    ];
 
     /**
      * Array of property to type mappings. Used for (de)serialization.
@@ -84,7 +80,7 @@ class ChargeComponentList implements ModelInterface, ArrayAccess, IterableType
      * @var string[]
      */
     protected static $attributeMap = [
-            ];
+    ];
 
     /**
      * Array of attributes to setter functions (for deserialization of responses).
@@ -92,7 +88,7 @@ class ChargeComponentList implements ModelInterface, ArrayAccess, IterableType
      * @var string[]
      */
     protected static $setters = [
-            ];
+    ];
 
     /**
      * Array of attributes to getter functions (for serialization of requests).
@@ -100,7 +96,7 @@ class ChargeComponentList implements ModelInterface, ArrayAccess, IterableType
      * @var string[]
      */
     protected static $getters = [
-            ];
+    ];
 
     /**
      * Array of attributes where the key is the local name,
@@ -251,10 +247,5 @@ class ChargeComponentList implements ModelInterface, ArrayAccess, IterableType
         }
 
         return json_encode(ObjectSerializer::sanitizeForSerialization($this));
-    }
-
-    public function getSubClass()
-    {
-        return ChargeComponent::class;
     }
 }
